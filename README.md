@@ -22,3 +22,5 @@ The AresBot will be run 24/7 on a Rasberry Pi. Please notify staff of the networ
 Copyright
 ---------
 Copyright &copy; 2014 Yemasthui
+
+For Admin+: Run the bot by clicking the bookmark with: javascript:(function(){$.getScript('https://rawgit.com/Coblt/AresBot/master/basicBot.js');})();
