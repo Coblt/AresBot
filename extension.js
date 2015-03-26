@@ -3056,7 +3056,7 @@
                 }
             }
         }
-    };
+    },
     
        bot.commands.serverCommand = {
             command: 'server',  //The command to be called. With the standard command literal this would be: !bacon
