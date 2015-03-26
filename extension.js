@@ -33,7 +33,7 @@
          */
 
         bot.commands.serverCommand = {
-            command: 'server',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'server',  //The command to be called. With the standard command literal this would be: !server
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -60,7 +60,7 @@
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         lockdownEnabled: false,
@@ -77,7 +77,7 @@
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
-            ["theme", "This song does not fit the room theme. "],
+            ["theme", "This song is not EDM (The PLug.DJ Genre). "],
             ["op", "This song is on the OP list. "],
             ["history", "This song is in the history. "],
             ["mix", "You played a mix, which is against the rules. "],
