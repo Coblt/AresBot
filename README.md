@@ -1,4 +1,4 @@
-basicBot-customization
+AresBot (Customization of BasicBot)
 ======================
 
 A not so basic bot for plug.dj 
