@@ -23,4 +23,6 @@ Copyright
 ---------
 Copyright &copy; 2014 Yemasthui
 
+-
+
 For Admin+: Run the bot by clicking the bookmark with: javascript:(function(){$.getScript('https://rawgit.com/Coblt/AresBot/master/basicBot.js');})();
