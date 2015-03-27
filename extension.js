@@ -186,7 +186,7 @@
         settings: {
             botName: "AresBot",
             language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/Coblt/basicBot/master/lang/en.json",
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
             startupEmoji: false, // true or false
@@ -204,16 +204,16 @@
             voteSkipLimit: 10,
             historySkip: false,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 8,
             autodisable: true,
-            commandCooldown: 30,
+            commandCooldown: 15,
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
-                ["theme", "This song does not fit the room theme. "],
-                ["op", "This song is on the OP list. "],
-                ["history", "This song is in the history. "],
-                ["mix", "You played a mix, which is against the rules. "],
+                ["theme", "This song does not fit the room theme (EDM). "],
+                ["op", "This song is on the OP list. Use !op to see the list. "],
+                ["history", "This song is in the recent DJ history. "],
+                ["mix", "You played a mix, which is against our room rules. "],
                 ["sound", "The song you played had bad sound quality or no sound. "],
                 ["nsfw", "The song you contained was NSFW (image or sound). "],
                 ["unavailable", "The song you played was not available for some users. "]
@@ -2477,6 +2477,19 @@
                 }
             },
 
+           serverCommand: {
+                command: 'server',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(basicBot.chat.brandambassador);
+                    }
+                }
+            },
+           
             refreshCommand: {
                 command: 'refresh',
                 rank: 'manager',
