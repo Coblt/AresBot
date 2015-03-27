@@ -220,25 +220,25 @@
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
-            motdEnabled: false,
-            motdInterval: 5,
-            motd: "Temporary Message of the Day",
+            motdEnabled: true,
+            motdInterval: 10,
+            motd: "Make sure to read the rules in the room description!",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: null,
+            opLink: https://docs.google.com/document/d/1ZLe2LlVC06Ssx7j8-qWhg_COakwjKRSGfWHJ2BjYK-s/edit?usp=sharing,
             rulesLink: null,
             themeLink: null,
             fbLink: null,
             youtubeLink: null,
-            website: null,
+            website: http://ares-network.net,
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
             commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+                OP: "https://docs.google.com/document/d/1ZLe2LlVC06Ssx7j8-qWhg_COakwjKRSGfWHJ2BjYK-s/edit?usp=sharing"
             }
         },
         room: {
